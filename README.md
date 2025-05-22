@@ -7,10 +7,10 @@
 One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (main)
 $ git status
 On branch main
-Your branch is up to date with 'origin/main'.      
+Your branch is up to date with 'origin/main'.
 
 Untracked files:
-  (use "git add <file>..." to include in what will 
+  (use "git add <file>..." to include in what will
 be committed)
         index.html
 
@@ -36,29 +36,29 @@ $ git commit -m "renamed main to master"
  1 file changed, 11 insertions(+)
  create mode 100644 index.html
 
-One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)        
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)
 $ git remote add origin https://github.com/Pothin-Neza/Gym-Git-Exercise-Solutions-2-.gitns-2-.git
 error: remote origin already exists.
 
-One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)        
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)
 $ git push origin master
-Enumerating objects: 4, done.      
+Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 4 threads
 Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 429 bytes | 214.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: 
+remote:
 remote: Create a pull request for 'master' on GitHub by visiting:
 remote:      https://github.com/Pothin-Neza/Gym-Git-Exercise-Solutions-2-/pull/new/master
 remote:
 To https://github.com/Pothin-Neza/Gym-Git-Exercise-Solutions-2-.git
  * [new branch]      master -> master
 
-One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)        
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)
 $ git branch dev
 
-One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)        
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (master)
 One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
 $ git branch test
                                                    olutions-2- (dev)
@@ -74,7 +74,7 @@ One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
 $ git status
 On branch dev
 Untracked files:
-  (use "git add <file>..." to include in what will 
+  (use "git add <file>..." to include in what will
 be committed)
         home.html
 
@@ -89,14 +89,14 @@ $ git stash
 No local changes to save
 
 One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)olutions-2- (dev)
-$ git stash -u                                      a1410a6 done with exercise 
+$ git stash -u                                      a1410a6 done with exercise
 Saved working directory and index state WIP on dev: a1410a6 done with exercise 1 bundle 1
                                                    olutions-2- (dev)
 One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
 $ git status
 On branch dev
 Untracked files:
-  (use "git add <file>..." to include in what will 
+  (use "git add <file>..." to include in what will
 be committed)
         about.html
 
@@ -122,7 +122,7 @@ No local changes to save
 
 One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
 $ git stash -u
-Saved working directory and index state WIP on dev: a1410a6 done with exercise 
+Saved working directory and index state WIP on dev: a1410a6 done with exercise
 1 bundle 1
 
 One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
@@ -176,9 +176,36 @@ One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
 $ git stash pop stash@{0}
 Already up to date.
 On branch dev
-nothing added to commit but untracked files present (use "git add" to track)   
+nothing added to commit but untracked files present (use "git add" to track)
 Dropped stash@{0} (6ddad511e39aa7237232ceec701ff2ed7202b4b5)
 
 One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
 $ git reset
+```
+
+## bundle 2 ex 1
+
+```
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)olutions-2- (dev)
+$ git branch ft/bundle-2
+                                                   olutions-2- (dev)
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
+$ git add .
+
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
+$ git commit -m "made some changes in ft/bundle-2 by adding a file"
+[dev d15fc0f] made some changes in ft/bundle-2 by adding a file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+
+One plus Ltd@PothinN23 MINGW64 ~/Gym-Git-Exercise-Solutions-2- (dev)
+$ git push origin dev
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 255 bytes | 255.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Pothin-Neza/Gym-Git-Exercise-Solutions-2-.git
+   19b49a0..d15fc0f  dev -> dev
 ```
